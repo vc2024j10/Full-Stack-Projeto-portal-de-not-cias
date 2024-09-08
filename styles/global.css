@@ -39,3 +39,48 @@ a:hover {
 h1, h2, h3 {
     font: inherit;
 }
+
+.container {
+    max-width: 1280px;
+    padding-inline: 32px;
+    margin-inline: auto;
+}
+
+/* utility-first */
+.grid {
+    display: grid;
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
+}
+
+/* estilizando o header  */
+/* ocorre algum erro ao criar o arquivo e importar buscar solução depois */
+
+#primary {
+    padding-block: 60px;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        
+    }
+
+    /* nesting css  */
+    div:nth-child(2) {
+        margin-inline: auto;
+    }
+
+    div:nth-child(3) {
+        justify-self: end;
+    }
+}
+
+#secondary {
+    padding-block: 14px;
+    border: solid 1px var(--stroke-color);
+    border-inline: none;
+    justify-content: space-between;
+}
